@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TextView android:text="My Nanodegree Apps!"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        >
+
+        <Button
+            android:id="@+id/spotify_streamer"
+            style="@style/MyAndroidAppButton"
+            android:text="@string/spotify_streamer"/>
+
+        <Button
+            android:id="@+id/scores_app"
+            style="@style/MyAndroidAppButton"
+            android:text="@string/scores_app"/>
+
+        <Button
+            android:id="@+id/library_app"
+            style="@style/MyAndroidAppButton"
+            android:text="@string/library_app"/>
+
+        <Button
+            android:id="@+id/build_it_bigger"
+            style="@style/MyAndroidAppButton"
+            android:text="@string/build_it_bigger"/>
+
+        <Button
+            android:id="@+id/xyz_reader"
+            style="@style/MyAndroidAppButton"
+            android:text="@string/xyz_reader"/>
+
+        <Button
+            android:id="@+id/capstone_my_own_app"
+            style="@style/MyAndroidAppButton"
+            android:background="#B71C1C"
+            android:textColor="#FFFFFF"
+            android:text="@string/capstone_my_own_app"/>
+
+    </LinearLayout>
+</LinearLayout>
