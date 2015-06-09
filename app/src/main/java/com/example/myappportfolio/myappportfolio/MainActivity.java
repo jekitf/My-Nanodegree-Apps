@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -40,33 +41,19 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /** Called when the user touches the button */
-    public void sendMessage(View view) {
+    public void displayToast(View view) {
         // Do something in response to button click
 
+        Button button = (Button) view;
+
+        String buttonText = (String) button.getText();
+
         Context context = getApplicationContext();
-        String text = "This button will launch my ";
-        int id=view.getId();
-
-        if (id==findViewById(R.id.spotify_streamer).getId()) {
-            text += "spotify streamer";
-        }
-        else if (id==findViewById(R.id.scores_app).getId()) {
-            text += "scores app";
-        }
-        else if (id==findViewById(R.id.library_app).getId()) {
-            text += "library app";
-        }
-        else if (id==findViewById(R.id.build_it_bigger).getId()) {
-            text += "build it bigger";
-        }
-        else if (id==findViewById(R.id.xyz_reader).getId()) {
-            text += "xyz reader";
-        }
-        else if (id==findViewById(R.id.capstone_my_own_app).getId()) {
-            text += "capstone my own app";
-        }
-
+        // open_app would add "Opens the app "
+        CharSequence text = getString(R.string.open_app)+" "
+                + buttonText;
         int duration = Toast.LENGTH_SHORT;
+
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }

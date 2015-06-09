@@ -7,5 +7,6 @@
     <string name="build_it_bigger">BUILD IT BIGGER</string>
     <string name="xyz_reader">XYZ READER</string>
     <string name="capstone_my_own_app">CAPSTONE: MY OWN APP</string>
+    <string name="open_app">This button will launch my</string>
     <string name="action_settings">Settings</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MyNanoDegreeAppsButtonAllApps">#F08C35</color>
+    <color name="MyNanoDegreeAppsButtonOwnApp">#B71C1C</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+</resources>

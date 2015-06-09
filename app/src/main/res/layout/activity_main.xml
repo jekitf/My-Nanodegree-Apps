@@ -7,7 +7,7 @@
 
 
     <TextView android:text="My Nanodegree Apps!"
-        android:textColor="#000000"
+        android:textColor="@color/Black"
         android:textSize="30sp"
         android:gravity="center"
         android:layout_marginTop="16dp"
@@ -51,8 +51,8 @@
         <Button
             android:id="@+id/capstone_my_own_app"
             style="@style/MyAndroidAppButton"
-            android:background="#B71C1C"
-            android:textColor="#FFFFFF"
+            android:background="@color/MyNanoDegreeAppsButtonOwnApp"
+            android:textColor="@color/White"
             android:text="@string/capstone_my_own_app"/>
 
     </LinearLayout>
